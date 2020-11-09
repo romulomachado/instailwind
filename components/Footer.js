@@ -16,7 +16,7 @@ export default function Footer() {
       <a className='flex justify-center w-1/5 p-3' href='#'>
         <img
           className='w-6 h-6 rounded-full'
-          src='https://instagram.fsdu1-1.fna.fbcdn.net/v/t51.2885-19/s150x150/116992867_218548879474663_8593955564100536984_n.jpg?_nc_ht=instagram.fsdu1-1.fna.fbcdn.net&_nc_ohc=HfIrUIcpvBAAX9eUvjz&_nc_tp=25&oh=d44d1f7be94c2c056820cf9a7da5a4dc&oe=5FD3B2E4'
+          src='https://images.unsplash.com/photo-1565386135310-41fdfde17ad5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=80'
         />
       </a>
     </footer>
