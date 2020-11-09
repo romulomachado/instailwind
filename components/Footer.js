@@ -1,24 +1,36 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <footer className='flex border-t'>
-      <a className='flex justify-center w-1/5 p-3' href='#'>
-        <HomeIcon />
-      </a>
-      <a className='flex justify-center w-1/5 p-3' href='#'>
-        <SearchIcon />
-      </a>
-      <a className='flex justify-center w-1/5 p-3' href='#'>
-        <NewPostIcon />
-      </a>
-      <a className='flex justify-center w-1/5 p-3' href='#'>
-        <ActivityIcon />
-      </a>
-      <a className='flex justify-center w-1/5 p-3' href='#'>
-        <img
-          className='w-6 h-6 rounded-full'
-          src='https://images.unsplash.com/photo-1565386135310-41fdfde17ad5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=80'
-        />
-      </a>
+      <Link href='/'>
+        <a className='flex justify-center w-1/5 p-3'>
+          <HomeIcon />
+        </a>
+      </Link>
+      <Link href='/explore'>
+        <a className='flex justify-center w-1/5 p-3'>
+          <SearchIcon />
+        </a>
+      </Link>
+      <Link href='/create'>
+        <a className='flex justify-center w-1/5 p-3'>
+          <NewPostIcon />
+        </a>
+      </Link>
+      <Link href='/activity'>
+        <a className='flex justify-center w-1/5 p-3'>
+          <ActivityIcon />
+        </a>
+      </Link>
+      <Link href="/profile">
+        <a className='flex justify-center w-1/5 p-3'>
+          <img
+            className='w-6 h-6 rounded-full'
+            src='https://images.unsplash.com/photo-1565386135310-41fdfde17ad5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=80'
+          />
+        </a>
+      </Link>
     </footer>
   );
 }
