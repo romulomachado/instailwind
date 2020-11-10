@@ -1,4 +1,31 @@
 import Header from '../components/Header';
+import Post from '../components/Post';
+
+const data = [
+  {
+    username: 'dj',
+    location: 'Austin, TX',
+    profileImageUrl:
+      'https://images.unsplash.com/photo-1565386135310-41fdfde17ad5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1560145836-d22431066353?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    username: 'googlethegolden',
+    profileImageUrl:
+      'https://images.unsplash.com/photo-1559604138-6ee75709612f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=80',
+    imageUrl:
+      'https://images.unsplash.com/photo-1559604138-6ee75709612f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=758&q=80',
+  },
+  {
+    username: 'thegoldenzara',
+    profileImageUrl:
+      'https://images.unsplash.com/photo-1526520112421-5054395689a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=250&q=80',
+    location: 'Brasília, DF',
+    imageUrl:
+      'https://images.unsplash.com/photo-1526520112421-5054395689a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80',
+  },
+];
 
 export default function Home() {
   return (
