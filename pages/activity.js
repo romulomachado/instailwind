@@ -1,3 +1,13 @@
+import Header from '../components/Header';
+
 export default function Activity() {
-  return <p>Activity</p>;
+  return (
+    <div>
+      <Header>
+        <h1 className='font-semibold'>Activity</h1>
+      </Header>
+
+      <p>Activity</p>
+    </div>
+  );
 }

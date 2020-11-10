@@ -1,7 +1,9 @@
+import Header from '../components/Header';
+
 export default function Home() {
   return (
     <div>
-      <header className='flex h-12 p-3 border-b'>
+      <Header>
         <a href='#'>
           <CameraIcon />
         </a>
@@ -15,7 +17,7 @@ export default function Home() {
         <a href='#'>
           <DirectIcon />
         </a>
-      </header>
+      </Header>
       <p>Home</p>
     </div>
   );

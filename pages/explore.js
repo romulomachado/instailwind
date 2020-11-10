@@ -1,3 +1,10 @@
+import Header from '../components/Header';
+
 export default function Explore() {
-  return <p>Explore</p>;
+  return (
+    <div>
+      <Header></Header>
+      <p>Explore</p>
+    </div>
+  );
 }
