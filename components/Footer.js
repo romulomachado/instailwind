@@ -5,12 +5,12 @@ export default function Footer() {
     <footer className='flex border-t'>
       <Link href='/'>
         <a className='flex justify-center w-1/5 p-3'>
-          <HomeIcon />
+          <HomeIconEmpty />
         </a>
       </Link>
       <Link href='/explore'>
         <a className='flex justify-center w-1/5 p-3'>
-          <SearchIcon />
+          <SearchIconEmpty />
         </a>
       </Link>
       <Link href='/create'>
@@ -20,7 +20,7 @@ export default function Footer() {
       </Link>
       <Link href='/activity'>
         <a className='flex justify-center w-1/5 p-3'>
-          <ActivityIcon />
+          <ActivityIconEmpty />
         </a>
       </Link>
       <Link href="/profile">
@@ -35,7 +35,20 @@ export default function Footer() {
   );
 }
 
-const HomeIcon = ({ className }) => (
+const HomeIconEmpty = () => (
+  <svg
+    aria-label='Home'
+    class='_8-yf5 '
+    fill='#262626'
+    height='24'
+    viewBox='0 0 48 48'
+    width='24'
+  >
+    <path d='M45.3 48H30c-.8 0-1.5-.7-1.5-1.5V34.2c0-2.6-2-4.6-4.6-4.6s-4.6 2-4.6 4.6v12.3c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5V23c0-.4.2-.8.4-1.1L22.9.4c.6-.6 1.5-.6 2.1 0l21.5 21.5c.4.4.6 1.1.3 1.6 0 .1-.1.1-.1.2v22.8c.1.8-.6 1.5-1.4 1.5zm-13.8-3h12.3V23.4L24 3.6l-20 20V45h12.3V34.2c0-4.3 3.3-7.6 7.6-7.6s7.6 3.3 7.6 7.6V45z'></path>
+  </svg>
+);
+
+const HomeIcon = () => (
   <svg
     aria-label='Home'
     fill='#262626'
@@ -47,10 +60,9 @@ const HomeIcon = ({ className }) => (
   </svg>
 );
 
-const SearchIcon = ({ className }) => (
+const SearchIconEmpty = () => (
   <svg
     aria-label='Search &amp; Explore'
-    class='_8-yf5 '
     fill='#262626'
     height='24'
     viewBox='0 0 48 48'
@@ -61,10 +73,21 @@ const SearchIcon = ({ className }) => (
   </svg>
 );
 
-const NewPostIcon = ({ className }) => (
+const SearchIcon = () => (
+  <svg
+    aria-label='Search &amp; Explore'
+    fill='#262626'
+    height='24'
+    viewBox='0 0 48 48'
+    width='24'
+  >
+    <path d='M47.6 44L35.8 32.2C38.4 28.9 40 24.6 40 20 40 9 31 0 20 0S0 9 0 20s9 20 20 20c4.6 0 8.9-1.6 12.2-4.2L44 47.6c.6.6 1.5.6 2.1 0l1.4-1.4c.6-.6.6-1.6.1-2.2zM20 35c-8.3 0-15-6.7-15-15S11.7 5 20 5s15 6.7 15 15-6.7 15-15 15z'></path>
+  </svg>
+);
+
+const NewPostIcon = () => (
   <svg
     aria-label='New Post'
-    class='_8-yf5 '
     fill='#262626'
     height='24'
     viewBox='0 0 48 48'
@@ -76,15 +99,26 @@ const NewPostIcon = ({ className }) => (
   </svg>
 );
 
-const ActivityIcon = ({ className }) => (
+const ActivityIconEmpty = () => (
   <svg
     aria-label='Activity'
-    class='_8-yf5 '
     fill='#262626'
     height='24'
     viewBox='0 0 48 48'
     width='24'
   >
     <path d='M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z'></path>
+  </svg>
+);
+
+const ActivityIcon = () => (
+  <svg
+    aria-label='Activity'
+    fill='#262626'
+    height='24'
+    viewBox='0 0 48 48'
+    width='24'
+  >
+    <path d='M34.6 3.1c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5s1.1-.2 1.6-.5c1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z'></path>
   </svg>
 );
