@@ -18,13 +18,17 @@ export default function Home() {
           <DirectIcon />
         </a>
       </Header>
-      <p>Home</p>
+      <div>
+        {data.map(({ profileImageUrl, username, location, imageUrl }) => (
+          <Post profileImageUrl={profileImageUrl} username={username} location={location} imageUrl={imageUrl} />
+        ))}
+      </div>
     </div>
   );
 }
 
 
-const CameraIcon = ({ className }) => (
+const CameraIcon = () => (
   <svg
     aria-label='New Story'
     fill='#262626'
@@ -40,7 +44,7 @@ const CameraIcon = ({ className }) => (
   </svg>
 );
 
-const DirectIcon = ({ className }) => (
+const DirectIcon = () => (
   <svg
     aria-label='Direct'
     fill='#262626'
