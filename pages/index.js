@@ -36,7 +36,7 @@ export default function Home() {
         </a>
         <a href='#' className='flex justify-center flex-1'>
           <img
-            className='w-20'
+            className='w-4/12'
             src='https://instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png'
           />
         </a>
