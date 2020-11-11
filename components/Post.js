@@ -34,7 +34,7 @@ export default function Post({
       <div className='flex content-around px-4 py-2 mb-1'>
         <div className='flex flex-1'>
           <button
-            className='mr-4 outline-none b-none'
+            className='mr-4 outline-none focus:outline-none b-none'
             onClick={() => setLiked(!liked)}
           >
             {liked ? <UnlikeIcon /> : <LikeIcon />}
@@ -47,7 +47,7 @@ export default function Post({
           </div>
         </div>
         <button
-          className='outline-none b-none'
+          className='outline-none focus:outline-none b-none'
           onClick={() => setSaved(!saved)}
         >
           {saved ? <RemoveIcon /> : <SaveIcon />}
