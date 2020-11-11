@@ -5,6 +5,7 @@ export default function Post({
   username,
   location,
   imageUrl,
+  caption,
 }) {
   return (
     <div>
@@ -15,7 +16,7 @@ export default function Post({
           height={40}
           className='rounded-full'
         />
-        <div className='flex flex-col justify-center flex-1 ml-4'>
+        <div className='flex flex-col justify-center flex-1 ml-3'>
           <h2 className='mb-0 text-sm font-bold'>{username}</h2>
           <p className='mt-0 text-xs'>{location}</p>
         </div>
@@ -26,7 +27,7 @@ export default function Post({
 
       <Image src={imageUrl} width={800} height={800} />
 
-      <div class='px-4 py-2 flex content-around'>
+      <div className='flex content-around px-4 py-2 mb-1'>
         <div className='flex flex-1'>
           <div className='mr-4'>
             <LikeIcon />
@@ -42,6 +43,22 @@ export default function Post({
           <SaveIcon />
         </div>
       </div>
+
+      <div className='px-4 mb-1'>
+        <p className='text-sm'>
+          Liked by <span className='font-semibold'>romulomachado</span> and{' '}
+          <span className='mr-2 font-semibold'>40 others</span>
+        </p>
+      </div>
+
+      {caption && (
+        <div className='px-4'>
+          <p className='text-sm'>
+            <span className='mr-2 font-bold'>{username}</span>
+            <span>{caption}</span>
+          </p>
+        </div>
+      )}
     </div>
   );
 }
