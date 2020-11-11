@@ -38,7 +38,6 @@ export default function Footer() {
 const HomeIconEmpty = () => (
   <svg
     aria-label='Home'
-    class='_8-yf5 '
     fill='#262626'
     height='24'
     viewBox='0 0 48 48'
